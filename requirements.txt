@@ -1,0 +1,11 @@
+# torch
+# torchvision
+tifffile
+imagecodecs
+scikit-learn
+numpy
+matplotlib
+scipy
+joblib
+tqdm
+ruamel.yaml<0.18.0

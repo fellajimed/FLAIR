@@ -1,0 +1,9 @@
+data/*
+*__pycache__/
+*.egg-info/
+*.ipynb_checkpoints/
+*.log
+*.DS_Store
+*.pth
+logs*/
+tmp/*

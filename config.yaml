@@ -1,0 +1,36 @@
+options:
+  logs:
+  use_cpu: false
+  random_seed: 42
+  data_random_seed: 40
+  nb_classes: 19
+data:
+  is_toy_dataset: true
+  k_patches: 4
+  ratio_train_val: 0.2
+  force: false
+  data_path:
+  batches:
+    - 40
+    - 100
+    - 100
+optimizer:
+  cls: Adam
+  kwargs:
+    lr: 5e-5
+loss:
+  cls: CrossEntropyLoss
+  kwargs: {}
+model:
+  cls: UNet
+  kwargs:
+    input_channels: 5
+    output_channels: 19
+    dropout: 0.1
+    batchnorm: false
+    channels:
+    - 64
+    - 128
+    - 256
+training:
+  epochs: 50
